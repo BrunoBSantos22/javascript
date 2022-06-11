@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pequeno Formulário</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div class="titulo">
+		<h1>Bem vindo ao seu <span>Formulário</span>.</h1>
+	</div>
+
+
+	<script>
+		var nome = window.prompt ('Bem Vindo ao nosso formulário. Digite seu Nome e Sobrenome para começarmos')
+		var idade = window.prompt ('Digite sua Idade')
+		var curso = window.prompt ('Está Cursando ou fazendo Faculdade? Se sim, qual?')
+		var profissao = window.prompt ('Atualmente se encontra empregado? Se sim, digite também sua profissão!')
+		var resumo = window.prompt ('Por fim, faça um Resumo sobre si! Planos, objetivos, sonhos, metas, fique a vontade para se expressar da sua melhor maneira!')
+
+		document.write (`Nome: ${nome}; <br>`)
+		document.write (`Idade: ${idade}; <br>`)
+		document.write (`Está em algum Curso ou fazendo Faculdade atualmente? Se sim, qual?: ${curso}; <br>`)
+		document.write (`Atualmente empregado? Se sim, qual sua profissão?: ${profissao}; <br>`)
+		document.write (`Agora um resumo sobre você: ${resumo};`)
+
+	</script>
+</body>
+</html>
