@@ -18,12 +18,25 @@
 
 	<p>Usando <strong>DOM</strong> em JavaScript</p>
 
-	<div>Clique Aqui</div>
+	<div id="msg">Clique Aqui</div>
 
 
 
 	<script>
-		window.document.write(window.navigator.appCodeName)
+		var corpo = document.body
+		var p1 = window.document.getElementsByTagName('p')[1]
+		window.document.write('Replicando o parágrafo acima: ' + p1.innerText)
+		p1.style.color = 'green'
+
+		/*var d = document.getElementById('msg')
+		d.style.color = 'brown'
+		d.style.textDecoration = 'underline'*/
+
+		var d = document.querySelector('div#msg')
+		d.style.color = 'red'
+
+		
+
 	</script>
 </body>
 </html>
