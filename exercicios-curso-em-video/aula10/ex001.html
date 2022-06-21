@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style001.css">
+	<title>Eventos DOM</title>
+</head>
+<body>
+	<h1>Eventos DOM</h1>
+
+	<hr>
+
+	<div id="container">
+
+		<div id="area">
+			Clique e descubra seu Futuro...
+		</div>
+
+	</div>
+
+
+	<script>
+		var area = document.getElementById('area')
+
+		addEventListener('click', clicar)
+
+		function clicar() {
+			area.innerText = ('{ Dev Júnior Front-End em 2023 }')
+			area.style.backgroundColor = ('darkblue')
+			area.style.cursor = ('auto')
+			area.style.textDecoration = ('none')
+		}
+	</script>
+</body>
+</html>
