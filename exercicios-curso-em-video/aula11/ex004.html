@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style004.css">
 	<title>Nacionalidade</title>
 </head>
 <body>
-	<h1>Qual sua Nacionalidade?</h1>
+	<h1>Qual a sua Nacionalidade?</h1>
 	<hr>
 	<p>
-		Informe sua Nacionalidade: <input type="text" name="txtnac" id="txtnac" style="text-transform: capitalize;" >
+		Informe sua Nacionalidade: <input type="text" name="txtnac" id="txtnac">
 		<input type="button" value="Descubra" onclick="verificar()">
 	</p>
 
@@ -22,10 +23,10 @@
 		function verificar() {
 			var txtp = document.querySelector('input#txtnac')
 			var res = document.querySelector('div#res')
-			var país = String (txtp.value).toUpperCase()
+			var país = String (txtp.value)
 
 			res.innerHTML = (`<p>Se estiver em <strong>${país}</strong>.</p>`)
-			if (país == 'Brasil') {
+			if (país == 'brasil') {
 				res.innerHTML += (`<p>Você é <strong>Brasileiro!</strong></p>`)
 			} else {
 				res.innerHTML += (`<p>Você é <strong>Estrangeiro!</strong></p>`)

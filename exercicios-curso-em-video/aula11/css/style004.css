@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*Bem basicão, só pra não deixar em branco.*/
+body {
+	background-color: #51E075;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+h1 {
+	background-color: #48C767;
+	margin: 0;
+	padding: 8px;
+}
+
+hr {
+	border: solid 1px black;
+	margin-top: 0;
+}
+
+p {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-indent: 0.4em;
+}
+
+input#txtnac {
+	text-transform: capitalize;
+	border: 0;
+	border-radius: 5px;
+}
