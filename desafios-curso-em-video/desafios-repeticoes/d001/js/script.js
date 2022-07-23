@@ -4,15 +4,16 @@ function contar() {
 	let passo = document.getElementById('txtp')
 	let res = document.getElementById('res')
 
-	if (inicio.value == 0 || fim.value == 0 || passo.value == 0) {
-		res.innerHTML = 'Impossível contar! '
+	if (inicio.value == 0 || fim.value == 0) {
+		res.innerHTML = '<strong>[ Impossível Contar ]</strong>'
 	} else {
+		res.innerHTML = ('Contando: <br>')
 		let i = Number(inicio.value)
 		let f = Number(fim.value)
 		let p = Number(passo.value)
 
 		if (p <= 0) {
-			alert('[Passo Inválido]. Considerando PASSO 1')
+			alert('[Passo Inválido]. Considerando PASSO 1!')
 			p = 1
 		}
 		if (i < f) {
@@ -25,6 +26,6 @@ function contar() {
 			for (let c = i; c >= f; c -= p) {
 				res.innerHTML += (` ${c} \u{27A1}`)
 			}
-		}
-	} 		res.innerHTML += (`\u{1F3C1}`)
+		}	res.innerHTML += (`\u{1F3C1}`)
+	} 	
 }
