@@ -5,8 +5,26 @@ function contar() {
 	let res = document.getElementById('res')
 
 	if (inicio.value == 0 || fim.value == 0 || passo.value == 0) {
-		alert('[ERRO] Dados Inválidos!')
+		res.innerHTML = 'Impossível contar! '
 	} else {
-		res.innerHTML = 'Contando...'
-	}
+		let i = Number(inicio.value)
+		let f = Number(fim.value)
+		let p = Number(passo.value)
+
+		if (p <= 0) {
+			alert('[Passo Inválido]. Considerando PASSO 1')
+			p = 1
+		}
+		if (i < f) {
+			// Contagem Crescente
+			for (let c = i; c <= f; c += p) {
+				res.innerHTML += (` ${c} \u{27A1}`)
+			}
+		} else {
+			//Contagem Decrescente
+			for (let c = i; c >= f; c -= p) {
+				res.innerHTML += (` ${c} \u{27A1}`)
+			}
+		}
+	} 		res.innerHTML += (`\u{1F3C1}`)
 }
